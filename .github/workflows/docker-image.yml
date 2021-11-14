@@ -2,7 +2,6 @@ name: Docker Image CI
 
 on:
   push:
-    branches: [ master ]
 
 jobs:
 
@@ -12,7 +11,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2 
-     - name: Dockerize
+    - name: Dockerize
        if: success()
        uses: manusa/actions-publish-docker@v1.1.2
        with:
