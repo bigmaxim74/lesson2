@@ -15,6 +15,6 @@ jobs:
       if: success()
       uses: manusa/actions-publish-docker@v1.1.2
       with:
-        name: bigmaxim74/githubYES
+        name: bigmaxim74/githubyes
         username: ${{ secrets.DOCKER_HUB_USER }}
         password: ${{ secrets.DOCKER_HUB_PASSWORD }}
